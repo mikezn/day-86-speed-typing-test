@@ -10,9 +10,9 @@ COLOUR_SELECTED_BACKGROUND = '#66ff66'
 COLOUR_WORD_ERROR = 'red'
 COLOUR_WORD_CORRECT = 'green'
 
-CANVAS_SIZE = (800, 526)
+CANVAS_SIZE = (900, 700)
 
-sentence = "Type this accurately or else die"
+sentence = "The rapid advancement of technology has significantly influenced various sectors, including healthcare, education, and manufacturing. Automation and artificial intelligence have streamlined processes, reduced human error, and increased overall efficiency. "
 sentence_words_list = sentence.split()
 time_start = None
 testing_in_progress = False
@@ -114,7 +114,7 @@ window = tkinter.Tk()
 window.title = "Typing Speed Test"
 window.config(padx=0, pady=0, bg=COLOUR_BACKGROUND)
 
-text_widget = tkinter.Text(window,  font=("Consolas", 16), height=5, width=50, background=COLOUR_BACKGROUND)
+text_widget = tkinter.Text(window,  font=("Consolas", 16), height=8, width=100, background=COLOUR_BACKGROUND)
 text_widget.insert("1.0", sentence)
 
 # configure all the text_widget tags for styling the text
